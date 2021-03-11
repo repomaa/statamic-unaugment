@@ -1,0 +1,29 @@
+{
+  "name": "repomaa/statamic-unaugment",
+  "description": "Statamic addon to disable augmentation for user-defined fields or field types",
+  "autoload": {
+    "psr-4": {
+      "Statamic\\Addons\\Unaugment\\Providers\\": "src/Providers",
+      "Statamic\\Addons\\Unaugment\\Http\\Resources\\": "src/Http/Resources"
+    }
+  },
+  "authors": [
+    {
+      "name": "Joakim Repomaa"
+    }
+  ],
+  "support": {
+    "email": "statamic@j.repomaa.com"
+  },
+  "extra": {
+    "statamic": {
+      "name": "Unaugment",
+      "description": "Disable augmentation for user-defined fields or field types"
+    },
+    "laravel": {
+      "providers": [
+        "Statamic\\Addons\\Unaugment\\Providers\\ServiceProvider"
+      ]
+    }
+  }
+}
